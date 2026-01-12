@@ -1,4 +1,4 @@
-import background from "//bg.jpg";
+import background from "/bg.jpg";
 function Hero() {
   return (
     <>

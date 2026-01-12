@@ -1,7 +1,7 @@
-import caterings from '//caterings.jpg'
-import birthdays from '//birthdays.jpg'
-import weddings from '//weddings.jpg'
-import events from '//events.jpg'
+import caterings from '/caterings.jpg'
+import birthdays from '/birthdays.jpg'
+import weddings from '/weddings.jpg'
+import events from '/events.jpg'
 function Services() {
     return(
         <>

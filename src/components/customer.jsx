@@ -1,6 +1,6 @@
-import firstCustomer from '//firstCustomer.png'
-import secondCustomer from '//secondCustomer.png'
-import thirdCustomer from '//thirdCustomer.png'
+import firstCustomer from '/firstCustomer.png'
+import secondCustomer from '/secondCustomer.png'
+import thirdCustomer from '/thirdCustomer.png'
 function Customers() {
     return(
         <>
