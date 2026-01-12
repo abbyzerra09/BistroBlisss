@@ -1,6 +1,6 @@
-import chef from '../assets/chef.jpg'
-import variousFoods from '../assets/variousFoods.jpg'
-import currySoup from '../assets/currySoup.jpg'
+import chef from '/chef.jpg'
+import variousFoods from '/variousFoods.jpg'
+import currySoup from '/currySoup.jpg'
 function ChefContents() {
     return(
         <>

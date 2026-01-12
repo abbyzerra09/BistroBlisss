@@ -1,4 +1,4 @@
-import background from "../assets/bg.jpg";
+import background from "//bg.jpg";
 function Hero() {
   return (
     <>

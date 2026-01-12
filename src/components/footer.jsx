@@ -1,4 +1,4 @@
-import logo from '../assets/toplogo.png'
+import logo from '//toplogo.png'
 import { Link } from 'react-router-dom';
 function Footer() {
     return(
