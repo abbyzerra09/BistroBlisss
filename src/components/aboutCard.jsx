@@ -1,5 +1,5 @@
-import aboutImg from '/about.jpg'
-import arrow from '/arrow.png'
+import aboutImg from '../assets/about.jpg'
+import arrow from '../assets/arrow.png'
 
 function AboutCard () {
     return (
