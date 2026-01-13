@@ -5,7 +5,7 @@ import Header from './components/header';
 import Hero from './components/heroSection';
 import ComponentsMenu from './components/ComponentsMenu';
 import AboutCard from './components/aboutCard';
-import Services from './components/service';
+import Services from './components/services';
 import ChefContents from './components/chefContents';
 import Customers from './components/customer';
 import Footer from './components/footer';
