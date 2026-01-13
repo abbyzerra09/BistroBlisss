@@ -1,7 +1,10 @@
 import logo from '../assets/Logo.png'
 import { Link } from 'react-router-dom';
+import { useState } from "react";
 
 function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
 
     return(
         <>
@@ -22,12 +25,15 @@ function Header() {
         </div>
       </div>
 
-      <nav className="bg-white shadow-sm sticky top-0 z-50">
+      <div className='sticky top-0 z-50'>
+      <nav className="bg-white shadow-sm relative">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
           
           <img className="w-30  md:w-45 " src={logo}></img>
 
-          <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
+          {/* desktop menu */}
+
+          <ul className="hidden min-[860px]:flex gap-8 text-gray-700 font-medium">
             <li className="px-1 py-1 hover:text-black/250 hover:px-1 Hover:py-1 hover:bg-gray-300 rounded-2xl hover:scale-105 transition-all cursor-pointer">
             <Link to="/" className="px-3 py-1 block">Home</Link>
             </li>
@@ -45,14 +51,41 @@ function Header() {
             </li>
           </ul>
 
-          <button className="hidden md:flex border border-black px-6 py-2 font-semibold rounded-full hover:bg-black hover:text-white transition">
+          <button className="hidden min-[860px]:flex border border-black px-6 py-2 font-semibold rounded-full hover:bg-red-700 hover:border-red-700 hover:text-white transition">
             Book A Table
           </button>
-          <div className="hamburger md:hidden">
-                <i className="text-2xl md:hidden fa-solid fa-bars"></i>
-            </div>
+
+
+          <div className="hamburger min-[860px]:hidden cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+            <i className="text-2xl fa-solid fa-bars"></i>
+          </div>
         </div>
-      </nav>
+      
+
+          {/* mobile menu */}
+        {isOpen && (
+        <div className="min-[860px]:hidden absolute top-full left-0 w-full bg-white shadow-xl z-999">
+          <ul className="flex flex-col items-center gap-4 py-6 text-gray-700 font-medium">
+            <li className='hover:text-red-700 transition duration-150'>
+              <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+            </li>
+            <li className='hover:text-red-700 transition duration-150'>
+              <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+            </li>
+            <li className='hover:text-red-700 transition duration-150'>
+              <Link to="/menu" onClick={() => setIsOpen(false)}>Menu</Link>
+            </li>
+            <li className='hover:text-red-700 transition duration-150'>
+              <Link to="/delivery" onClick={() => setIsOpen(false)}>Delivery</Link>
+            </li>
+            <li className='hover:text-red-700 transition duration-150'>
+              <Link to="/contacts" onClick={() => setIsOpen(false)}>Contacts</Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </nav>
+    </div>
         </>
     );
 }
