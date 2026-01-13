@@ -3,15 +3,16 @@ import './App.css';
 import ScrollToTop from './components/scrollToTop';
 import Header from './components/header';
 import Hero from './components/heroSection';
-import Menu from './components/menu';
+import ComponentsMenu from './components/ComponentsMenu';
 import AboutCard from './components/aboutCard';
 import Services from './components/services';
 import ChefContents from './components/chefContents';
 import Customers from './components/customer';
 import Footer from './components/footer';
+// import Contacts from './components/contacts';
 
 import About from './pages/about'; // Import the About page
-import PageMenu from './pages/menu'
+import PageMenu from './pages/Pagemenu'
 
 function App() {
   return (
@@ -26,11 +27,12 @@ function App() {
         <Route path="/" element={
           <>
             <Hero />
-            <Menu />
+            <ComponentsMenu />
             <AboutCard/>
             <Services />
             <ChefContents/>
             <Customers />
+            {/* <Contacts /> */}
           </>
         } />
 
