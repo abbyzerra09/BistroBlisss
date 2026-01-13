@@ -12,15 +12,13 @@ function Header() {
             <span className='hidden lg:flex'><i className="py-1 fa-regular fa-envelope"></i> yummy@bistrobliss</span>
           </div>
 
-          <div className="hidden md:flex md:mx-20 justify-end gap-3">
+          <div className="flex md:mx-20 justify-end md:gap-3 gap-1">
             <span className='p-1 px-1.5 bg-gray-600 hover:bg-gray-100/30 transition rounded-4xl'><i className="fa-brands fa-twitter"></i></span>
             <span className='p-1 px-1.5 bg-gray-600 hover:bg-gray-100/30 transition rounded-4xl'><i className="fa-brands fa-instagram"></i></span>
             <span className='p-1 px-1.5 bg-gray-600 hover:bg-gray-100/30 transition rounded-4xl'><i className="fa-brands fa-facebook"></i></span>
             <span className='p-1 px-1.5 bg-gray-600 hover:bg-gray-100/30 transition rounded-4xl'><i className="fa-brands fa-github"></i></span>
           </div>
-            <div className="hamburger md:hidden">
-                <i className="text-2xl md:hidden fa-solid fa-bars"></i>
-            </div>
+            
         </div>
       </div>
 
@@ -47,9 +45,12 @@ function Header() {
             </li>
           </ul>
 
-          <button className="border border-black px-6 py-2 font-semibold rounded-full hover:bg-black hover:text-white transition">
+          <button className="hidden md:flex border border-black px-6 py-2 font-semibold rounded-full hover:bg-black hover:text-white transition">
             Book A Table
           </button>
+          <div className="hamburger md:hidden">
+                <i className="text-2xl md:hidden fa-solid fa-bars"></i>
+            </div>
         </div>
       </nav>
         </>
