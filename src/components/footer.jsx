@@ -56,6 +56,7 @@ function Footer() {
         </div>
         </div>
 
+        <p className='text-sm -tracking-tighter font-medium cursor-pointer italic'>Created with ❤️ by @Rohit Thapa</p>
     </div>
 </div>
 
